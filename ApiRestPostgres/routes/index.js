@@ -8,13 +8,6 @@ var conString = process.env.DATABASE_URL || "postgres://postgres:postgres@localh
 
 var coffee_query = "SELECT id FROM teste WHERE id = 1";
 
- /* await client.connect();
-  var res = await client.query("SELECT * FROM json_test");
-  res.rows.forEach(row=>{
-      console.log(row);
-  });
-  await client.end();*/
-
 /* GET home page. */
 router.get('/', function (req, res, next) {
   res.render('index', {
